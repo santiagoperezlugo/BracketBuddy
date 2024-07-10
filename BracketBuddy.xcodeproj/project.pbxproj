@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FBA11DF2B5A1C5E00963B4C /* BracketBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA11DE2B5A1C5E00963B4C /* BracketBuddyApp.swift */; };
+		2FBA11E12B5A1C5E00963B4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA11E02B5A1C5E00963B4C /* ContentView.swift */; };
+		2FBA11E32B5A1C6300963B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBA11E22B5A1C6300963B4C /* Assets.xcassets */; };
+		2FBA11E62B5A1C6300963B4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBA11E52B5A1C6300963B4C /* Preview Assets.xcassets */; };
+		2FBA11F02B5A1C6300963B4C /* BracketBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA11EF2B5A1C6300963B4C /* BracketBuddyTests.swift */; };
+		2FBA11FA2B5A1C6300963B4C /* BracketBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA11F92B5A1C6300963B4C /* BracketBuddyUITests.swift */; };
+		2FBA11FC2B5A1C6300963B4C /* BracketBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA11FB2B5A1C6300963B4C /* BracketBuddyUITestsLaunchTests.swift */; };
+		2FBA120A2B5A304200963B4C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA12092B5A304200963B4C /* Player.swift */; };
+		2FBA120D2B5A324500963B4C /* TournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA120C2B5A324500963B4C /* TournamentViewModel.swift */; };
+		2FBA12102B5A32CA00963B4C /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA120F2B5A32CA00963B4C /* TeamsView.swift */; };
+		2FBA12122B5B19FC00963B4C /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA12112B5B19FC00963B4C /* Match.swift */; };
+		2FBA12142B5B1A8B00963B4C /* Bracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA12132B5B1A8B00963B4C /* Bracket.swift */; };
+		2FBA12162B5B1D9A00963B4C /* BracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA12152B5B1D9A00963B4C /* BracketView.swift */; };
+		2FC6431D2B6096FE00E7EAAE /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6431C2B6096FE00E7EAAE /* PlayerView.swift */; };
+		2FC643202B60B17C00E7EAAE /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6431F2B60B17C00E7EAAE /* BindingExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FBA11EC2B5A1C6300963B4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FBA11D32B5A1C5E00963B4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBA11DA2B5A1C5E00963B4C;
+			remoteInfo = BracketBuddy;
+		};
+		2FBA11F62B5A1C6300963B4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FBA11D32B5A1C5E00963B4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBA11DA2B5A1C5E00963B4C;
+			remoteInfo = BracketBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FBA11DB2B5A1C5E00963B4C /* BracketBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BracketBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBA11DE2B5A1C5E00963B4C /* BracketBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketBuddyApp.swift; sourceTree = "<group>"; };
+		2FBA11E02B5A1C5E00963B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FBA11E22B5A1C6300963B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FBA11E52B5A1C6300963B4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FBA11EB2B5A1C6300963B4C /* BracketBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BracketBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBA11EF2B5A1C6300963B4C /* BracketBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketBuddyTests.swift; sourceTree = "<group>"; };
+		2FBA11F52B5A1C6300963B4C /* BracketBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BracketBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBA11F92B5A1C6300963B4C /* BracketBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketBuddyUITests.swift; sourceTree = "<group>"; };
+		2FBA11FB2B5A1C6300963B4C /* BracketBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FBA12092B5A304200963B4C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2FBA120C2B5A324500963B4C /* TournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewModel.swift; sourceTree = "<group>"; };
+		2FBA120F2B5A32CA00963B4C /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		2FBA12112B5B19FC00963B4C /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		2FBA12132B5B1A8B00963B4C /* Bracket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bracket.swift; sourceTree = "<group>"; };
+		2FBA12152B5B1D9A00963B4C /* BracketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketView.swift; sourceTree = "<group>"; };
+		2FC6431C2B6096FE00E7EAAE /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		2FC6431F2B60B17C00E7EAAE /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FBA11D82B5A1C5E00963B4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11E82B5A1C6300963B4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11F22B5A1C6300963B4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FBA11D22B5A1C5D00963B4C = {
+			isa = PBXGroup;
+			children = (
+				2FBA11DD2B5A1C5E00963B4C /* BracketBuddy */,
+				2FBA11EE2B5A1C6300963B4C /* BracketBuddyTests */,
+				2FBA11F82B5A1C6300963B4C /* BracketBuddyUITests */,
+				2FBA11DC2B5A1C5E00963B4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FBA11DC2B5A1C5E00963B4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA11DB2B5A1C5E00963B4C /* BracketBuddy.app */,
+				2FBA11EB2B5A1C6300963B4C /* BracketBuddyTests.xctest */,
+				2FBA11F52B5A1C6300963B4C /* BracketBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FBA11DD2B5A1C5E00963B4C /* BracketBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				2FC6431E2B60B15800E7EAAE /* Extensions */,
+				2FBA120E2B5A32AC00963B4C /* Views */,
+				2FBA120B2B5A322200963B4C /* ViewModels */,
+				2FBA11DE2B5A1C5E00963B4C /* BracketBuddyApp.swift */,
+				2FBA12082B5A2FA700963B4C /* Models */,
+				2FBA11E02B5A1C5E00963B4C /* ContentView.swift */,
+				2FBA11E22B5A1C6300963B4C /* Assets.xcassets */,
+				2FBA11E42B5A1C6300963B4C /* Preview Content */,
+			);
+			path = BracketBuddy;
+			sourceTree = "<group>";
+		};
+		2FBA11E42B5A1C6300963B4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA11E52B5A1C6300963B4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FBA11EE2B5A1C6300963B4C /* BracketBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA11EF2B5A1C6300963B4C /* BracketBuddyTests.swift */,
+			);
+			path = BracketBuddyTests;
+			sourceTree = "<group>";
+		};
+		2FBA11F82B5A1C6300963B4C /* BracketBuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA11F92B5A1C6300963B4C /* BracketBuddyUITests.swift */,
+				2FBA11FB2B5A1C6300963B4C /* BracketBuddyUITestsLaunchTests.swift */,
+			);
+			path = BracketBuddyUITests;
+			sourceTree = "<group>";
+		};
+		2FBA12082B5A2FA700963B4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA12092B5A304200963B4C /* Player.swift */,
+				2FBA12112B5B19FC00963B4C /* Match.swift */,
+				2FBA12132B5B1A8B00963B4C /* Bracket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FBA120B2B5A322200963B4C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA120C2B5A324500963B4C /* TournamentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2FBA120E2B5A32AC00963B4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FBA120F2B5A32CA00963B4C /* TeamsView.swift */,
+				2FBA12152B5B1D9A00963B4C /* BracketView.swift */,
+				2FC6431C2B6096FE00E7EAAE /* PlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FC6431E2B60B15800E7EAAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FC6431F2B60B17C00E7EAAE /* BindingExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FBA11DA2B5A1C5E00963B4C /* BracketBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBA11FF2B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddy" */;
+			buildPhases = (
+				2FBA11D72B5A1C5E00963B4C /* Sources */,
+				2FBA11D82B5A1C5E00963B4C /* Frameworks */,
+				2FBA11D92B5A1C5E00963B4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BracketBuddy;
+			productName = BracketBuddy;
+			productReference = 2FBA11DB2B5A1C5E00963B4C /* BracketBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FBA11EA2B5A1C6300963B4C /* BracketBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBA12022B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddyTests" */;
+			buildPhases = (
+				2FBA11E72B5A1C6300963B4C /* Sources */,
+				2FBA11E82B5A1C6300963B4C /* Frameworks */,
+				2FBA11E92B5A1C6300963B4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FBA11ED2B5A1C6300963B4C /* PBXTargetDependency */,
+			);
+			name = BracketBuddyTests;
+			productName = BracketBuddyTests;
+			productReference = 2FBA11EB2B5A1C6300963B4C /* BracketBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FBA11F42B5A1C6300963B4C /* BracketBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBA12052B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddyUITests" */;
+			buildPhases = (
+				2FBA11F12B5A1C6300963B4C /* Sources */,
+				2FBA11F22B5A1C6300963B4C /* Frameworks */,
+				2FBA11F32B5A1C6300963B4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FBA11F72B5A1C6300963B4C /* PBXTargetDependency */,
+			);
+			name = BracketBuddyUITests;
+			productName = BracketBuddyUITests;
+			productReference = 2FBA11F52B5A1C6300963B4C /* BracketBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FBA11D32B5A1C5E00963B4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2FBA11DA2B5A1C5E00963B4C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2FBA11EA2B5A1C6300963B4C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FBA11DA2B5A1C5E00963B4C;
+					};
+					2FBA11F42B5A1C6300963B4C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FBA11DA2B5A1C5E00963B4C;
+					};
+				};
+			};
+			buildConfigurationList = 2FBA11D62B5A1C5E00963B4C /* Build configuration list for PBXProject "BracketBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FBA11D22B5A1C5D00963B4C;
+			productRefGroup = 2FBA11DC2B5A1C5E00963B4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FBA11DA2B5A1C5E00963B4C /* BracketBuddy */,
+				2FBA11EA2B5A1C6300963B4C /* BracketBuddyTests */,
+				2FBA11F42B5A1C6300963B4C /* BracketBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FBA11D92B5A1C5E00963B4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBA11E62B5A1C6300963B4C /* Preview Assets.xcassets in Resources */,
+				2FBA11E32B5A1C6300963B4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11E92B5A1C6300963B4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11F32B5A1C6300963B4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FBA11D72B5A1C5E00963B4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC6431D2B6096FE00E7EAAE /* PlayerView.swift in Sources */,
+				2FBA11E12B5A1C5E00963B4C /* ContentView.swift in Sources */,
+				2FBA120D2B5A324500963B4C /* TournamentViewModel.swift in Sources */,
+				2FBA120A2B5A304200963B4C /* Player.swift in Sources */,
+				2FBA12162B5B1D9A00963B4C /* BracketView.swift in Sources */,
+				2FBA12102B5A32CA00963B4C /* TeamsView.swift in Sources */,
+				2FBA11DF2B5A1C5E00963B4C /* BracketBuddyApp.swift in Sources */,
+				2FBA12122B5B19FC00963B4C /* Match.swift in Sources */,
+				2FBA12142B5B1A8B00963B4C /* Bracket.swift in Sources */,
+				2FC643202B60B17C00E7EAAE /* BindingExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11E72B5A1C6300963B4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBA11F02B5A1C6300963B4C /* BracketBuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBA11F12B5A1C6300963B4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBA11FC2B5A1C6300963B4C /* BracketBuddyUITestsLaunchTests.swift in Sources */,
+				2FBA11FA2B5A1C6300963B4C /* BracketBuddyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FBA11ED2B5A1C6300963B4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBA11DA2B5A1C5E00963B4C /* BracketBuddy */;
+			targetProxy = 2FBA11EC2B5A1C6300963B4C /* PBXContainerItemProxy */;
+		};
+		2FBA11F72B5A1C6300963B4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBA11DA2B5A1C5E00963B4C /* BracketBuddy */;
+			targetProxy = 2FBA11F62B5A1C6300963B4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FBA11FD2B5A1C6300963B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FBA11FE2B5A1C6300963B4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FBA12002B5A1C6400963B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BracketBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5A7UX9R963;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BracketBuddy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FBA12012B5A1C6400963B4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BracketBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 5A7UX9R963;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BracketBuddy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FBA12032B5A1C6400963B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BracketBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BracketBuddy";
+			};
+			name = Debug;
+		};
+		2FBA12042B5A1C6400963B4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BracketBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BracketBuddy";
+			};
+			name = Release;
+		};
+		2FBA12062B5A1C6400963B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BracketBuddy;
+			};
+			name = Debug;
+		};
+		2FBA12072B5A1C6400963B4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ti.BracketBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BracketBuddy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FBA11D62B5A1C5E00963B4C /* Build configuration list for PBXProject "BracketBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBA11FD2B5A1C6300963B4C /* Debug */,
+				2FBA11FE2B5A1C6300963B4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBA11FF2B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBA12002B5A1C6400963B4C /* Debug */,
+				2FBA12012B5A1C6400963B4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBA12022B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBA12032B5A1C6400963B4C /* Debug */,
+				2FBA12042B5A1C6400963B4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBA12052B5A1C6400963B4C /* Build configuration list for PBXNativeTarget "BracketBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBA12062B5A1C6400963B4C /* Debug */,
+				2FBA12072B5A1C6400963B4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FBA11D32B5A1C5E00963B4C /* Project object */;
+}
